@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="ulp-version" content="1.17.67">
+
+
+
+  <meta name="robots" content="noindex, nofollow">
+
+
+  <link rel="stylesheet" href="https://cdn.auth0.com/ulp/react-components/1.85.1/css/main.cdn.min.css">
+  <style id="custom-styles-container">
+    :root {
+      --font-family: "Söhne", -apple-system, BlinkMacSystemFont, Helvetica, sans-serif;
+      --primary-color: #10a37f;
+      --primary-color-no-override: #10a37f;
+      --action-primary-color: #10a37f;
+      --link-color: #10a37f;
+      --input-box-shadow-depth: 2px;
+      --input-border-radius: 6px;
+      --button-border-radius: 6px;
+      --page-background-color: #0d0f27;
+    }
+
+    body {
+      font-family: var(--font-family);
+
+
+      background-color: var(--page-background-color);
+
+    }
+
+    .oai-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 100%;
+
+
+
+
+    }
+
+    .oai-header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 32px 0 0;
+      flex: 0 0 auto;
+
+
+
+
+
+    }
+
+    .oai-header img {
+      margin-top: 0px;
+      width: 70px;
+      height: 70px;
+      fill: #202123;
+    }
+
+    .oai-footer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #6e6e80;
+      padding: 12px 0 24px;
+      flex: 0 0 auto;
+    }
+
+    .oai-footer a {
+      color: var(--primary-color);
+      margin: 0 10px;
+    }
+
+    ._widget-auto-layout main._widget {
+      flex: 1 0 auto;
+      min-height: 0;
+
+    }
+
+    main header>img:first-of-type {
+      display: none;
+
+    }
+
+    main>section,
+    main>section>div:first-child {
+      box-shadow: none;
+
+
+
+
+    }
+
+    main header>h1 {
+      font-weight: bold !important;
+      font-size: 32px !important;
+    }
+
+    main a {
+      font-weight: normal !important;
+
+    }
+
+    .ulp-alternate-action {
+      text-align: center;
+
+    }
+
+    button[type="submit"] {
+      font-family: var(--font-family);
+      color: #ffffff;
+      background-color: #414141;
+    }
+
+
+
+
+
+    main header>h1 {
+      margin-bottom: 0 !important;
+    }
+
+
+    main header>h1+div {
+      display: none !important;
+
+    }
+
+
+
+    div:has(> form[data-provider]) {
+      display: flex;
+      flex-direction: column;
+    }
+
+    form[data-provider="google"] {
+      order: -1;
+    }
+
+    form[data-provider] {
+      margin-bottom: var(--spacing-1);
+    }
+  </style>
+</head>
+
+<body class="_widget-auto-layout">
+  <div class="oai-wrapper">
+    <header class="oai-header">
+
+
+    </header>
+    <main class="_widget login-id">
+
+      <section class="ce1c51067 _prompt-box-outer c88150d08">
+        <div class="cc05a3c46 c80e7d22f">
+
+
+
+
+          <div class="cfffef62c">
+
+
+            <div class="c5e7fcf9e c2b2933dc">
+
+
+
+              <div class="c97907fcb c64df57aa">
+                <div class="c19de01a2">
+
+
+                  <form method="POST" class="cee83adc4 _form-login-id" data-form-primary="true">
+                    <input type="hidden" name="state" value="">
+
+
+
+
+
+                    <div class="c97907fcb c64df57aa">
+                      <div class="c19de01a2">
+
+                        <img class="oai-header img" src="../public/Rectangle 1.png" height="160px" width="160px" style="
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto;
+                        width: 50%;
+                        height: 200px;
+                        " ;alt="image" />
+
+                        <h1 style="font-size: large; text-align: center;">Welcome to Campus Connect</h1>
+                        <br>
+
+                        <div class="input-wrapper _input-wrapper">
+
+                          <div class="c560829fa c0aceb7a6 text c32b43f1f" data-action-text=""
+                            data-alternate-action-text="">
+                            <label class="cd9bf43f7 no-js cf134434a cceb0baa2" for="username">
+                              Email address
+                            </label>
+
+                            <input class="input c382dfe22 c7dbf3e82" inputMode="email" name="username" id="username"
+                              type="text" value=" " required autoComplete="username" autoCapitalize="none"
+                              spellCheck="false" autoFocus>
+
+                            <div class="cd9bf43f7 js-required cf134434a cceb0baa2" data-dynamic-label-for="username"
+                              aria-hidden="true">
+                              Email address
+                            </div>
+                          </div>
+
+
+                        </div>
+
+
+
+
+
+                      </div>
+                    </div>
+
+
+
+                    <input class="hide" type="password" autoComplete="off" tabindex="-1" aria-hidden="true">
+
+                    <input type="hidden" id="js-available" name="js-available" value="false">
+
+                    <input type="hidden" id="webauthn-available" name="webauthn-available" value="false">
+
+                    <input type="hidden" id="is-brave" name="is-brave" value="false">
+
+                    <input type="hidden" id="webauthn-platform-available" name="webauthn-platform-available"
+                      value="false">
+
+
+
+                    <div class="c9d281cd0">
+
+                      <button type="submit" name="action" value="default"
+                        class="cc0e61092 c24150cbf cb6ae05ba ce8acedbf _button-login-id"
+                        data-action-button-primary="true">Continue</button>
+
+                    </div>
+                  </form>
+                </div>
+              </div>
+
+
+
+              <div class="ulp-alternate-action  _alternate-action __s16nu9">
+
+
+                <p class="cf92835f2 ceccb26c1 ca6a894c0">Don&#39;t have an account?
+                  <a class="cf7d01f7e cd03f83ce" href="./login.html" aria-label="">Sign up</a>
+                </p>
+
+
+              </div>
+
+
+
+              <div class="c35e208d5 c1165be8f">
+                <span>Or</span>
+              </div>
+
+
+
+
+
+
+
+              <div class="c561a734a cbf55b485">
+
+
+                <form method="post" data-provider="apple" class="cd80a39c6 caf1b11ba c5bd016f2"
+                  data-form-secondary="true">
+                  <input type="hidden" name="state" value="#">
+
+                  <input type="hidden" name="connection" value="apple">
+
+                  <button style="background-color: rgb(238, 232, 232);color:black;" type="submit"
+                    class="cf6fd475c ca0517366 cad7cf320" data-provider="apple" data-action-button-secondary="true">
+
+                    <span class="ce666763b cd99af78f" data-provider="apple"></span>
+
+
+                    <span class="cb28ce97c">Continue with Apple</span>
+                  </button>
+                </form>
+                <form method="post" class="cd80a39c6 caf1b11ba c0bb23da3" data-form-secondary="true">
+                  <input type="hidden" name="state" value="h">
+
+                  <input type="hidden" name="connection" value="windowslive">
+
+                  <button type="submit" class="cf6fd475c ca0517366 c4622ddc0" data-provider="windowslive"
+                    data-action-button-secondary="true">
+
+                    <span class="ce666763b cd99af78f" data-provider="windowslive"></span>
+
+
+                    <span class="cb28ce97c">Continue with Microsoft Account</span>
+                  </button>
+                </form>
+
+                <form method="post" data-provider="google" class="cd80a39c6 caf1b11ba c583c0495"
+                  data-form-secondary="true">
+                  <input type="hidden" name="state" value="#">
+
+                  <input type="hidden" name="connection" value="google-oauth2">
+
+                  <button type="submit" class="cf6fd475c ca0517366 c21028214" data-provider="google"
+                    data-action-button-secondary="true">
+
+                    <span class="ce666763b cd99af78f" data-provider="google"></span>
+
+
+                    <span class="cb28ce97c">Continue with Google</span>
+                  </button>
+                </form>
+
+
+
+
+
+              </div>
+              <footer class="oai-footer">
+                <a href="#" target="_blank">Terms of use</a>
+                |
+                <a href="#privacy-policy" target="_blank">Privacy policy</a>
+              </footer>
+            </div>
+
+
+          </div>
+        </div>
+  </div>
+
+
+  </section>
+  </main>
+  <script >
+    
+  </script>
+  <!-- footer -->
+
+</body>
+
+</html>

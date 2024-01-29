@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - www.codingnepalweb.com -->
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>campus connect</title>
+  <link rel="stylesheet" href="index.css" />
+  <style>
+     footer {
+      background-color: #170832;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+      margin-top: 5px;
+    }
+
+    /* CSS styles for links in the footer */
+    footer a {
+      color: #fff;
+      text-decoration: none;
+      padding :0 3px;
+    }
+
+    footer a:hover {
+      opacity: 0.5;
+      
+    }
+
+    /* CSS styles for location and time zone */
+    #location-timezone {
+      font-size: 12px;
+      margin-top: 10px;
+      color: rgb(196, 193, 188);
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <header class="header1">
+      <nav class="navbar">
+        
+        
+        <h2 class="logo"><img src="./public/Rectangle 1.png" alt=""></h2>
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" id="hamburger-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+            <path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+          </svg>
+        </label>
+        <ul class="links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Services</a></li>
+
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+        <div class="buttons">
+          <a href="./account.html" class="signin">Sign In</a>
+          <a href="./login.html" class="signup">Sign Up</a>
+        </div>
+      </nav>
+    </header>
+  </div>
+
+
+  <div class="grid1">
+    <div id="part1">
+  
+      
+        <div id="sume"><img  src="./public/hero-bg.png" alt="img"></div>
+          
+        
+        
+  
+
+    </div>
+
+
+
+
+    <div id="part2">
+      <div class="hero">
+        <h1>Campus <span id="org">Connect</span></h1>
+
+        <p>
+          the ultimate solution for students seeking hassle-free accommodation and meals during their academic journey.
+          Designed with the modern student in mind, our app streamlines the process of finding suitable hostels and mess
+          facilities, ensuring convenience and comfort every step of the way.
+        </p>
+        <div class="button">
+        <a href="./login.html" class="join">  <button  class="button-78">Join Now</button></div></a>
+          
+          <!-- <a href="./account.html" class="learn"><button class="button-78">Learn More</button></a> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  
+<div>
+  <a href="+919356858076"><img style="position: fixed; bottom: 0px;right: 0px;padding-bottom: 25px;padding-right: 20px;" src="./public/icons8-whatsapp.svg" alt=""></a>
+</div>
+
+ 
+
+
+  <footer>
+    <p>&copy; 2024 @campus connect. All rights reserved.</p>
+    <nav>
+      <a href="#"><img src="./public/icons8-instagram.svg" alt=""></a> 
+      <a href="#"><img src="./public/icons8-twitterx.svg" alt=""></a> 
+      <a href="#"><img src="./public/icons8-linkedin.svg" alt=""></a>
+      <a href="#"><img src="./public/icons8-facebook.svg" alt=""></a>
+    </nav>
+    <div id="location-timezone"></div>
+  </footer>
+
+</body>
+<script>
+  function fetchLocationAndTimeZone() {
+    fetch('https://ipapi.co/json/')
+    .then(response => response.json())
+    .then(data => {
+      const ipAddress = data.ip;
+      const city = data.city;
+      const region = data.region;
+      const country = data.country_name;
+      const timezone = data.timezone;
+
+      const locationTimeZoneElement = document.getElementById('location-timezone');
+      locationTimeZoneElement.textContent = `Your IP address: ${ipAddress} | Location: ${city}, ${region}, ${country} | Time Zone: ${timezone}`;
+    })
+    .catch(error => {
+      console.error('Error fetching location and time zone:', error);
+    });
+  }
+
+  // Call the function when the page loads
+  window.onload = fetchLocationAndTimeZone;
+</script>
+
+</html>

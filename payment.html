@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+    <div class="bg-gray-100 h-[100vh] w-full border-2 ">
+        <div class="bg-white p-8 rounded shadow-md h-[100%]">
+            <a href="#back">
+                <img src="./public/iconc/back.png" alt="" >
+            </a>
+            
+            <h2 class="text-2xl font-bold mb-4 text-center">Payment</h2>
+   
+            <form class="space-y-4">
+                <div class="flex items-center h-20 border-2 pl-5 space-x-3 pt-0">
+                    <input id="paytm" type="radio" name="payment_method" value="paytm" class="form-radio h-4 pl-8 w-4 text-indigo-600 transition duration-150 ease-in-out">
+                    <img src="./public/iconc/paytm.png" alt="">
+                    <p>Pay Via PayTM</p>
+                </div>
+                <div class="flex items-center h-20 border-2 pl-5 space-x-3 pt-0">
+                    <input id="gpay" type="radio" name="payment_method" value="gpay" class="form-radio h-4 w-4 text-indigo-600 transition duration-150 ease-in-out">
+                    
+                        <img src="./public/iconc/gpay.png" alt="">
+                        <p>Pay Via Google Pay</p>
+                    
+                    
+                </div>
+                <div class="flex items-center h-20 border-2 pl-5 space-x-3 pt-0">
+                    <input id="debit-credit" type="radio" name="payment_method" value="debit-credit" class="form-radio h-4 w-4 text-indigo-600 transition duration-150 ease-in-out">
+                    <img src="./public/iconc/atm.png" alt="">
+                    <p>Pay Via Debit/Credit Card</p>
+                </div>
+                <div class="flex items-center h-20 border-2 pl-5 space-x-3 pt-0">
+                    <input id="other" type="radio" name="payment_method" value="other" class="form-radio h-4 w-4 text-indigo-600 transition duration-150 ease-in-out">
+                    <ul class="flex space-x-3">
+                        <img src="./public/iconc/wallet.png" alt="">
+                       
+                        <p>Other Payment Method</p>
+                    </ul>
+                </div>
+                <button type="submit" class="w-full py-2 px-4 bg-indigo-600 hover:bg-indigo-700 rounded text-white">Pay Now</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

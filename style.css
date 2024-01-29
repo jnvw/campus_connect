@@ -1,0 +1,384 @@
+body {
+    font-family: "Segoe UI", sans-serif;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    background-color: #414141;
+    
+
+    
+  }
+  
+
+  .dashboard {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2px;
+    color: rgb(16, 15, 15);
+    background-color:rgb(19, 22, 23);
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 90px;
+    background-color:#140e25;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    color: rgb(16, 15, 15);
+    padding-top: 20px;
+    
+     
+    
+
+  }
+
+  .logo1 {
+    width: 250px;
+    height: 30px;
+    margin: 5px 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .logo1:hover{
+    background-color: #000000;
+    width: 250px;
+    height: 30px;
+    margin: 5px 0;
+    
+    border-radius: 10px;
+    
+
+
+  }
+
+  /* Media Query for screens up to 600 pixels */
+  @media (max-width: 600px) {
+    .dashboard {
+      display: flex;
+    }
+
+    .sidebar {
+      display: none;
+    }
+  }
+
+  /* Media Query for screens wider than 600 pixels */
+  @media (min-width: 601px) {
+    .dashboard {
+      display: none;
+    }
+
+    .sidebar {
+      display: flex;
+    }
+  }
+  
+  a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+  }
+  
+  .heading {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .subheading {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 5px;
+  }
+  
+  header {
+    background-image: url("./public/bg.png");
+    background-color: #414141;
+    padding: 15px 0;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #f9f7f7;
+  }
+  
+  .search-bar {
+    display: flex;
+    border: 1px solid #033211;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    
+    background-color: #080808;
+    
+  
+  }
+  
+  .search-bar input {
+    flex: 1;
+    border: none;
+    outline: none;
+    
+    font-size: 14px;
+    background-color: #0a1703;
+    color: #ffffff;
+    border-radius: 13px;
+  }
+  
+  .search-bar button {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    border: none;
+    background-color: #c5c4d2;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #333;
+  }
+  
+  .hero {
+    background-image: url("./public/bg.png");
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #989292;
+  }
+  .horizontal-snap {
+  margin: 0 auto;
+  display: grid;
+  grid-auto-flow: column;
+  gap: 1rem;
+  height: calc(180px + 1rem);
+  padding: 1rem;
+  max-width: 480px;
+  overflow-y: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+}
+
+.horizontal-snap > a {
+  scroll-snap-align: center;
+}
+
+.horizontal-snap img {
+  width: 180px;
+  max-width: none;
+  object-fit: contain;
+  border-radius: 1rem;
+}
+  
+  .hero-content {
+    text-align: center;
+  }
+  
+  .hero-heading {
+    font-size: 36px;
+    font-weight: 700;
+  }
+  
+  .hero-subheading {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 15px;
+  }
+  
+  .explore-button {
+    background-color: #ff626b;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .explore-button:hover {
+    background-color: #e04f58;
+  }
+  
+  .featured-deals {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .deal-items{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .deal-item {
+
+    display:flex;
+    
+    justify-content: space-between;
+    margin: 10px;
+    border: 1px solid #4f6dd7;
+    border-radius: 5px;
+    padding: 0px;
+    transition: 0.3s ease-in-out;
+
+    height: 120px;
+    width: 320px;
+    
+  }
+  
+  .deal-item:hover {
+    box-shadow: 0 2px 5px rgba(49, 46, 46, 0.1);
+  }
+  
+  .deal-image {
+    width: 130px;
+    height: 180px;
+    margin-bottom: 4px;
+  }
+  
+  .deal-info {
+    font-size: 11px;
+    
+    
+  
+
+  }
+  
+  .deal-name {
+    font-weight: 600;
+  }
+  
+  .deal-price {
+    color: #ff6fff
+  }
+
+ #sumedh{
+  padding-left: 6%;
+  padding-right: 6%;
+ }
+ #desc{
+  padding-left: 10%;
+ }
+ #mar{
+  border: 5px solid black;
+ }
+  .h_bar {
+    width: 100%;
+    overflow-x: auto; /* Enable horizontal scrolling on small and large screens */
+}
+
+.h1_bar {
+  
+    display: grid;
+    grid-auto-flow: column;
+    gap: 1.2rem;
+    overflow-x: auto; /* Enable horizontal scrolling on small and large screens */
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+}
+
+.h1_bar::-webkit-scrollbar {
+    display: none;
+}
+
+
+.card {
+  z-index: -1;
+   box-shadow: #414141;
+    scroll-snap-align: start;
+    border-radius: 25px;
+    
+    
+    height: 200px;
+    width: 200px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #414141;
+    background: #dad3d3;
+    border: 1.5px solid blueviolet;
+
+
+     position: relative;
+     flex-direction: column;
+     
+}
+
+
+
+#adder{
+position: absolute;
+cursor: pointer;
+top: 4%;
+left: 96%;
+border-radius: 10px;
+transform: translate(-50%, -50%);
+cursor: pointer;
+color: rgb(77, 245, 48);
+background-color:rgb(0, 11, 1);
+font-size: 24px;  
+box-shadow: #15073e;
+      
+}
+
+.card img {
+  width: 100%; /* Make the image fill the width of the card */
+  height: 100%; /* Make the image fill the height of the card */
+  object-fit: cover; /* Maintain aspect ratio and cover the entire card */
+  border-radius: 25px; /* Maintain the card's border-radius for rounded corners */
+}
+
+
+/* Optional: Add padding around each card on small and large screens */
+.card {
+    margin: 1rem;
+}
+
+
+/* Media Query for Mobile */
+@media (max-width: 767px) {
+  .h1_bar {
+      overflow-x: auto; /* Enable horizontal scrolling on small screens */
+  }
+  .card {
+      gap: 1.2rem; /* Add gap between cards on small screens */
+      min-width: calc(90px + 1.2rem); /* Adjust card width to include gap */
+      min-height: calc(100px + 1.2rem); /* Adjust card width to include gap */
+      margin-right: 1.2rem; /* Add right margin to create gap between cards */
+      margin-left: 1.2rem; /* Add right margin to create gap between cards */
+  }
+
+  /* Remove margin from the last card to avoid extra space */
+  .card:last-child {
+      margin-right: 0;
+  }
+}
+
+
+

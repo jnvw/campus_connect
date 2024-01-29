@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Payment Page</title>
+    <style>
+        .payment-option:hover {
+            background-color: #e5e5e5;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 h-screen flex justify-center items-center">
+    <div class="flex flex-col items-center space-y-4">
+        <a href="./" class="text-gray-600 hover:text-gray-900">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+            </svg>
+        </a>
+        <div class="flex space-x-4">
+            <div class="payment-option bg-white shadow p-4 rounded cursor-pointer">
+                <img src="card1.png" alt="Payment Option 1" class="h-12 w-12">
+            </div>
+            <div class="payment-option bg-white shadow p-4 rounded cursor-pointer">
+                <img src="card2.png" alt="Payment Option 2" class="h-12 w-12">
+            </div>
+            <div class="payment-option bg-white shadow p-4 rounded cursor-pointer">
+                <img src="card3.png" alt="Payment Option 3" class="h-12 w-12">
+            </div>
+        </div>
+        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            Pay
+        </button>
+    </div>
+</body>
+</html>
